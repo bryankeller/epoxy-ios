@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added an `applyBars` closure to `BarInstallerConfiguration` to allow consumers to configure _when_
   bars are applied to the underlying `BarContainer` by a bar installer, e.g. to defer bar model
   updates that might conflict with an in-flight shared element transition.
+- Added `swiftUIView(…)` to host a SwiftUI `View` within an Epoxy container and the `itemModel(…)`,
+  `barModel(…)`, etc. methods to host an `EpoxyableView` within a SwiftUI `View`
 
 ### Fixed
 - Fixes an issue that could cause `CollectionView` scroll animation frames to have an incorrect
